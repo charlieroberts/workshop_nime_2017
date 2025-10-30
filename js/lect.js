@@ -175,6 +175,7 @@ CodeMirror.defaults.mode = "local";
 //////////////////////////////////////////////////////////////////////////////////////////
 if( window.useMIDI === true ) MIDI.init()
 
+window.onclick = function() {
 Gibberish.init();  
 Gibberish.Time.export();
 Gibberish.Binops.export();
@@ -201,7 +202,7 @@ bass = new Gibberish.MonoSynth({
   octave2:0, 
   octave3:0
 });
-
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // Websocket
