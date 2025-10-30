@@ -202,6 +202,7 @@ bass = new Gibberish.MonoSynth({
   octave2:0, 
   octave3:0
 });
+	audio_reset();
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -469,7 +470,7 @@ function audio_reset() {
 	Gibberish.sequencers.push(cq);
 }
 
-audio_reset();
+
 
 window.seq.addCommand = function(name, impl) {
 	this.commands[name] = impl;
